@@ -6,15 +6,31 @@
     <title>Урок 3 | Цифровая мастерская</title>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Playfair+Display:wght@700;900&display=swap" rel="stylesheet">
     <style>
-        :root {
-            --soft-pink: #fff0f3;
-            --soft-purple: #f3f0ff;
-            --accent-color: #008080;
-            --deep-accent: #800000;
-            --text-main: #4a4a4a;
-            --white: #ffffff;
-            --button-grad: linear-gradient(to top, #800000 0%, #d63031 100%);
-        }
+ :root {
+        /* Основные цвета морской темы */
+        --soft-pink: #e0f7fa;      /* Светлая бирюза (фон блоков) */
+        --soft-purple: #f0faff;    /* Небесно-голубой (фон страницы) */
+        --accent-color: #008080;   /* Морская волна (тиль) */
+        --deep-accent: #003366;    /* Глубокий синий (заголовки) */
+        --text-main: #2c3e50;      /* Темный сланец для текста */
+        --white: #ffffff;
+        
+        /* Кнопка теперь с градиентом от глубокого синего к яркому тилю */
+        --button-grad: linear-gradient(to top, #003366 0%, #008080 100%);
+    }
+
+    /* Дополнительная правка для карточек, чтобы они гармонировали */
+    .type-card:hover { 
+        border-color: var(--accent-color); 
+        box-shadow: 0 5px 15px rgba(0, 128, 128, 0.1);
+    }
+
+    .repair-item:hover {
+        border-color: var(--soft-pink);
+    }
+    
+    /* Цвет пульсирующего пальца можно сделать золотистым, как солнечный блик */
+    .
 
         body {
             background: var(--soft-purple);
