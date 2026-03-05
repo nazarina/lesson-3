@@ -6,28 +6,60 @@
     <title>Урок 3 | Цифровая мастерская</title>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Playfair+Display:wght@700;900&display=swap" rel="stylesheet">
     <style>
- :root {
-        /* Основные цвета морской темы */
-        --soft-pink: #e0f7fa;      /* Светлая бирюза (фон блоков) */
-        --soft-purple: #f0faff;    /* Небесно-голубой (фон страницы) */
-        --accent-color: #008080;   /* Морская волна (тиль) */
-        --deep-accent: #003366;    /* Глубокий синий (заголовки) */
-        --text-main: #2c3e50;      /* Темный сланец для текста */
-        --white: #ffffff;
-        
-        /* Кнопка теперь с градиентом от глубокого синего к яркому тилю */
-        --button-grad: linear-gradient(to top, #003366 0%, #008080 100%);
-    }
+:root {
+    /* Энергичная морская палитра */
+    --soft-pink: rgba(0, 242, 234, 0.15); /* Прозрачный бирюзовый неон для блоков */
+    --soft-purple: #001a2c;              /* Глубокий океан для основы */
+    --accent-color: #00f2ea;             /* Яркий электрик-тиль (свечение) */
+    --deep-accent: #ffffff;              /* Белоснежный для контрастных заголовков */
+    --text-main: #b0d4ff;                /* Светло-голубой песок для чтения */
+    --white: #0a2e46;                    /* Темно-синий "стеклянный" фон карточек */
+    
+    /* Кнопка: от глубокого ультрамарина к взрывному бирюзовому */
+    --button-grad: linear-gradient(180deg, #00f2ea 0%, #005f73 100%);
+}
 
-    /* Дополнительная правка для карточек, чтобы они гармонировали */
-    .type-card:hover { 
-        border-color: var(--accent-color); 
-        box-shadow: 0 5px 15px rgba(0, 128, 128, 0.1);
-    }
+body {
+    /* Динамичный фон: эффект глубокой воды с бликами */
+    background: fixed linear-gradient(135deg, #001a2c 0%, #00334e 50%, #001a2c 100%);
+    color: var(--text-main);
+    margin: 0;
+}
 
-    .repair-item:hover {
-        border-color: var(--soft-pink);
-    }
+/* Карточки теперь выглядят как светящиеся панели */
+.section {
+    background: rgba(10, 46, 70, 0.7); /* Эффект стекла */
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(0, 242, 234, 0.2);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3);
+}
+
+.type-card {
+    background: rgba(255, 255, 255, 0.05) !important;
+    border: 1px solid rgba(0, 242, 234, 0.1) !important;
+}
+
+.type-card:hover { 
+    border-color: var(--accent-color); 
+    box-shadow: 0 0 20px rgba(0, 242, 234, 0.4);
+    transform: translateY(-5px);
+    background: rgba(0, 242, 234, 0.05) !important;
+}
+
+.repair-item {
+    background: rgba(0, 242, 234, 0.05) !important;
+    border: 1px solid transparent;
+}
+
+.repair-item:hover {
+    border-color: var(--accent-color);
+    box-shadow: inset 0 0 15px rgba(0, 242, 234, 0.1);
+}
+
+/* Яркий палец-подсказка */
+.click-hint, .click-hint-bonus {
+    filter: drop-shadow(0 0 8px var(--accent-color));
+}
     
     /* Цвет пульсирующего пальца можно сделать золотистым, как солнечный блик */
     .
