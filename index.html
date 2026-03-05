@@ -7,66 +7,65 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Playfair+Display:wght@700;900&display=swap" rel="stylesheet">
     <style>
 :root {
-    /* Энергичная морская палитра */
-    --soft-pink: rgba(0, 242, 234, 0.15); /* Прозрачный бирюзовый неон для блоков */
-    --soft-purple: #001a2c;              /* Глубокий океан для основы */
-    --accent-color: #00f2ea;             /* Яркий электрик-тиль (свечение) */
-    --deep-accent: #ffffff;              /* Белоснежный для контрастных заголовков */
-    --text-main: #b0d4ff;                /* Светло-голубой песок для чтения */
-    --white: #0a2e46;                    /* Темно-синий "стеклянный" фон карточек */
+    /* Энергичная, но более светлая морская палитра */
+    --soft-pink: rgba(0, 242, 234, 0.1); 
+    --soft-purple: #003a5d;              /* Лазурно-синий вместо почти черного */
+    --accent-color: #00f2ea;             
+    --deep-accent: #ffffff;              
+    --text-main: #e2f1ff;                /* Еще более светлый текст для контраста */
+    --white: rgba(10, 60, 90, 0.8);      /* Более прозрачный и светлый фон карточек */
     
-    /* Кнопка: от глубокого ультрамарина к взрывному бирюзовому */
-    --button-grad: linear-gradient(180deg, #00f2ea 0%, #005f73 100%);
+    --button-grad: linear-gradient(180deg, #00f2ea 0%, #007da0 100%);
 }
 
 body {
-    /* Динамичный фон: эффект глубокой воды с бликами */
-    background: fixed linear-gradient(135deg, #001a2c 0%, #00334e 50%, #001a2c 100%);
+    /* Фон стал светлее: переход от морской синевы к яркому бирюзовому центру */
+    background: fixed linear-gradient(135deg, #002b44 0%, #00547a 50%, #002b44 100%);
     color: var(--text-main);
     margin: 0;
 }
 
-/* Карточки теперь выглядят как светящиеся панели */
+/* Стеклянные панели стали прозрачнее, пропуская больше света от фона */
 .section {
-    background: rgba(10, 46, 70, 0.7); /* Эффект стекла */
-    backdrop-filter: blur(10px);
-    border: 1px solid rgba(0, 242, 234, 0.2);
-    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3);
+    background: rgba(10, 60, 90, 0.6); 
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(0, 242, 234, 0.3);
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
 }
 
 .type-card {
-    background: rgba(255, 255, 255, 0.05) !important;
-    border: 1px solid rgba(0, 242, 234, 0.1) !important;
+    background: rgba(255, 255, 255, 0.08) !important;
+    border: 1px solid rgba(255, 255, 255, 0.1) !important;
 }
 
 .type-card:hover { 
     border-color: var(--accent-color); 
-    box-shadow: 0 0 20px rgba(0, 242, 234, 0.4);
+    box-shadow: 0 0 25px rgba(0, 242, 234, 0.5);
     transform: translateY(-5px);
-    background: rgba(0, 242, 234, 0.05) !important;
+    background: rgba(0, 242, 234, 0.1) !important;
 }
 
 .repair-item {
-    background: rgba(0, 242, 234, 0.05) !important;
-    border: 1px solid transparent;
+    background: rgba(255, 255, 255, 0.05) !important;
+    border: 1px solid rgba(0, 242, 234, 0.1);
 }
 
 .repair-item:hover {
     border-color: var(--accent-color);
-    box-shadow: inset 0 0 15px rgba(0, 242, 234, 0.1);
+    box-shadow: 0 0 15px rgba(0, 242, 234, 0.2);
+    background: rgba(0, 242, 234, 0.1) !important;
 }
 
-/* Яркий палец-подсказка */
+/* Свечение подсказки */
 .click-hint, .click-hint-bonus {
-    filter: drop-shadow(0 0 8px var(--accent-color));
+    filter: drop-shadow(0 0 10px var(--accent-color));
 }
-    
     /* Цвет пульсирующего пальца можно сделать золотистым, как солнечный блик */
     .
 
         body {
-            background: var(--soft-purple);
-            color: var(--text-main);
+           /* background: var(--soft-purple);
+            color: var(--text-main);*/
             font-family: 'Montserrat', sans-serif;
             margin: 0;
             line-height: 1.6;
