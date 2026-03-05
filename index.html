@@ -6,66 +6,20 @@
     <title>Урок 3 | Цифровая мастерская</title>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Playfair+Display:wght@700;900&display=swap" rel="stylesheet">
     <style>
-:root {
-    /* Энергичная, но более светлая морская палитра */
-    --soft-pink: rgba(0, 242, 234, 0.1); 
-    --soft-purple: #003a5d;              /* Лазурно-синий вместо почти черного */
-    --accent-color: #00f2ea;             
-    --deep-accent: #ffffff;              
-    --text-main: #e2f1ff;                /* Еще более светлый текст для контраста */
-    --white: rgba(10, 60, 90, 0.8);      /* Более прозрачный и светлый фон карточек */
-    
-    --button-grad: linear-gradient(180deg, #00f2ea 0%, #007da0 100%);
-}
-
-body {
-    /* Фон стал светлее: переход от морской синевы к яркому бирюзовому центру */
-    background: fixed linear-gradient(135deg, #002b44 0%, #00547a 50%, #002b44 100%);
-    color: var(--text-main);
-    margin: 0;
-}
-
-/* Стеклянные панели стали прозрачнее, пропуская больше света от фона */
-.section {
-    background: rgba(10, 60, 90, 0.6); 
-    backdrop-filter: blur(12px);
-    border: 1px solid rgba(0, 242, 234, 0.3);
-    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
-}
-
-.type-card {
-    background: rgba(255, 255, 255, 0.08) !important;
-    border: 1px solid rgba(255, 255, 255, 0.1) !important;
-}
-
-.type-card:hover { 
-    border-color: var(--accent-color); 
-    box-shadow: 0 0 25px rgba(0, 242, 234, 0.5);
-    transform: translateY(-5px);
-    background: rgba(0, 242, 234, 0.1) !important;
-}
-
-.repair-item {
-    background: rgba(255, 255, 255, 0.05) !important;
-    border: 1px solid rgba(0, 242, 234, 0.1);
-}
-
-.repair-item:hover {
-    border-color: var(--accent-color);
-    box-shadow: 0 0 15px rgba(0, 242, 234, 0.2);
-    background: rgba(0, 242, 234, 0.1) !important;
-}
-
-/* Свечение подсказки */
-.click-hint, .click-hint-bonus {
-    filter: drop-shadow(0 0 10px var(--accent-color));
-}
-    /* Цвет пульсирующего пальца можно сделать золотистым, как солнечный блик */
-    .
+    :root {
+            --soft-pink: #fff0f3;
+            --soft-purple: #f3f0ff;
+            --accent-color: #008080;
+            --deep-accent: #800000;
+            --text-main: #4a4a4a;
+            --white: #ffffff;
+            --button-grad: linear-gradient(to top, #800000 0%, #d63031 100%);
+        }
+   
 
         body {
-           /* background: var(--soft-purple);
-            color: var(--text-main);*/
+            background: var(--soft-purple);
+            color: var(--text-main);
             font-family: 'Montserrat', sans-serif;
             margin: 0;
             line-height: 1.6;
